@@ -18,6 +18,6 @@ c=a+b
 
 f=theano.function([a,b],c)
 
-# bind 1.5 to ‘a’, 2.5 to ‘b’, and evaluate ‘c’
+# bind 1.5 to 'a', 2.5 to 'b', and evaluate 'c'
 
 assert 4.0==f(1.5,2.5)
