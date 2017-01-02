@@ -9,10 +9,10 @@ CNN in all
 from theano.tensor.nnet import conv
 import theano.tensor as T
 import numpy, theano
-import time,cPickle, gzip
+import xrange;
+import time, gzip
+from mnist import MNIST
 from theano.tensor.signal import downsample
-from LR_MNIST import LogisticRegression, load_data
-from MLP import HiddenLayer
 
 class LeNetConvPoolLayer (object):
     def __init__ (self, rng, input, filter_shape, image_shape, poolsize=(2,2)):
@@ -34,9 +34,6 @@ class LeNetConvPoolLayer (object):
         self.params = [self.W, self.b]
         
         
-
-
-
 
 def test_CNN(learning_rate = 0.01, n_epochs = 1000, batch_size = 20, n_hidden = 500):
     dataset = load_data()
@@ -173,7 +170,11 @@ def test_CNN(learning_rate = 0.01, n_epochs = 1000, batch_size = 20, n_hidden = 
 
     
     
-    
+def load_data():
+    mn = mnist.MNIST(DATA_PATH)
+
+    test_img, test_label = mn.load_testing()
+    train_img, train_label = mn.load_training()
 
 
 if __name__ == '__main__':
