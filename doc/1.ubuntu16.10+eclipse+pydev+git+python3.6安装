@@ -1,0 +1,22 @@
+1.ubuntu16.10安装
+参照http://www.cnblogs.com/allenjin/archive/2011/11/26/2264089.html
+ubuntu16.10官方网站可下
+注意：menu.lst中iso路径的设置，即(hd0,X)中的X为C盘的编号
+
+2.eclipse+git安装
+从官方网站下载最新版安装
+注意：用apt-get方式安装的不是最新版，好多功能都没有，比如git
+
+3.pydev安装
+从官方网站下载zip，解压到eclipse安装路径下的dropins目录中
+注意：用eclipse自带的安装插件死活不行
+
+4.python3.6安装
+从官方网站下载源码包，解压
+首先安装zlib，make的时候需要
+然后修改Modules目录下的Setup文件，取消“SSL=/usr/local/ssl”及其后面四行的注释，不然pip无法使用
+./Configure
+make
+sudo make install
+安装完毕
+
