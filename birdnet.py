@@ -12,7 +12,7 @@ from keras.layers.normalization import BatchNormalization
 
 # modify if necessary
 DIM_ORDERING = 'tf'
-DATA_ROOT_DIR = '../CUB_200_2011/'
+DATA_ROOT_DIR = '/media/carey/000A768C0005BE99/bird/cub/CUB_200_2011/'
 
 
 def read_images(image_target_size):
