@@ -46,12 +46,12 @@ def read_images(image_target_size):
 
 def load_model_json(filename):
     # load json and create model
-    json_file = open(filename+'.json', 'r')
+    json_file = open(PARAM_ROOT_DIR+filename+'.json', 'r')
     loaded_model_json = json_file.read()
     json_file.close()
     loaded_model = model_from_json(loaded_model_json)
     # load weights into new model
-    loaded_model.load_weights(filename+"_json.h5")
+    loaded_model.load_weights(PARAM_ROOT_DIR+filename+"_json.h5")
     loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
     print("Loaded model from disk")
     return  loaded_model

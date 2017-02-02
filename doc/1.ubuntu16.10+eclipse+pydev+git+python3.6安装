@@ -9,7 +9,7 @@ ubuntu16.10官方网站可下
 
 3.pydev安装
 从官方网站下载zip，解压到eclipse安装路径下的dropins目录中
-注意：用eclipse自带的安装插件死活不行
+注意：用eclipse自带的插件安装死活不行
 
 4.python3.6安装
 从官方网站下载源码包，解压
@@ -18,5 +18,8 @@ ubuntu16.10官方网站可下
 ./Configure
 make
 sudo make install
+
+5.在eclipse配置python
+
 安装完毕
 
