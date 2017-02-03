@@ -22,9 +22,7 @@ def read_images(image_target_size):
     subdirs = os.listdir(image_root_dir)
 
     images = []
-    
-    indexsub = 0
-    
+        
     for subdir in sorted(subdirs):
         files = os.listdir(os.path.join(image_root_dir, subdir))
 
@@ -35,10 +33,6 @@ def read_images(image_target_size):
             image = image_utils.img_to_array(image, dim_ordering=DIM_ORDERING)
             image /= 255  # scale the RGB values to [0, 1]
             images.append(image)
-
-        indexsub = indexsub + 1
-        if (indexsub == 2):
-            break
 
     images = np.stack(images, axis=0)
 
