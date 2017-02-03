@@ -1,4 +1,5 @@
 sudo pip3 install matplotlib
+sudo pip3 install nolearn
 sudo pip3 install caffe
 sudo pip3 install torch
 sudo pip3 install MXNet

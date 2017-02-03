@@ -13,7 +13,9 @@ ubuntu16.10官方网站可下
 
 4.python3.6安装
 从官方网站下载源码包，解压
-首先安装zlib，make的时候需要
+首先安装zlib/bz2，make的时候需要
+sudo apt-get install -y zlib
+sudo apt-get install -y libbz2-dev
 然后修改Modules目录下的Setup文件，取消“SSL=/usr/local/ssl”及其后面四行的注释，不然pip无法使用
 ./Configure
 make
