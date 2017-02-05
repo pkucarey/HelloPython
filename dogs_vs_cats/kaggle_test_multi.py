@@ -35,7 +35,7 @@ def main():
     res = np.zeros((len(clfs), test_size), dtype='float32')
     for n,mdl in enumerate(mdls):
         res[n, :] = process(mdl, ds, batch_size=500)
-        print "Processed model ",n
+        print ("Processed model ",n)
         #Fix for CUDA memory issues - wut?
         del mdl
         gc.collect()
