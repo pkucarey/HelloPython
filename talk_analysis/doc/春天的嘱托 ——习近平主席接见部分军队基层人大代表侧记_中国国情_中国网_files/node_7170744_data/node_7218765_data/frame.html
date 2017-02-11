@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>天气频道_中国网</title>
+    <meta name="keywords" content="天气,天气预报,天气实况,生活指数,灾害预警,空气质量,热门城市">
+    <meta name="description" content="中国网天气频道频道国内列表页为您提供国内2000多个城市最及时全面的天气预报，天气实况查询，当日生活指数，旅游出行,交通天气等查询服务，天气预报4天查询。">
+    <link rel="stylesheet" type="text/css" href="frame_data/reset-1.css">
+    <link rel="stylesheet" type="text/css" href="frame_data/common.css">
+    <link rel="stylesheet" type="text/css" href="frame_data/frame.css">
+</head>
+
+<body>
+    <div class="clearfix theme0" id="weather"><a href="http://www.china.com.cn/weather_forecast/?areaid=101010100" target="_blank" class="fl">北京</a><span class="ml5 fl icon"></span><span class="ml5 fl">7℃</span></div>
+    <script type="text/javascript" src="frame_data/jquery-1.js"></script>
+    <script type="text/javascript" src="frame_data/weather-base.js"></script>
+    <script type="text/javascript">
+        (function (window, $) {
+            var CIICWeather = window.CIICWeather || {},
+                now = new Date(),
+                el = $('#weather'),
+                theme = location.search.match(/theme=([^&]*)/i),
+                lang = location.search.match(/lang=([^&]*)/i),
+                theme_name = (!!theme && !!theme[1] ? theme[1] : 'default'),
+                lang_name = (!!lang && !!lang[1] ? lang[1] : 'zh');
+            window.cb_forecast = function (data_forecast) {
+                var tpl = '<a href="http://www.china.com.cn/weather_forecast/?areaid={city_id}" target="_blank" class="fl">{city}</a><span class="ml5 fl icon">{icon}</span><span class="ml5 fl">{temperature}℃</span>',
+                    img = now.getHours() < 18 ? 'd' + data_forecast.forecast.f1[0].fa : 'n' + data_forecast.forecast.f1[0].fb;
+                document.getElementById('weather').innerHTML = CIICWeather.template(tpl, {
+                    city_id: data_forecast.city.c1,
+                    city: 'zh' == lang_name ? data_forecast.city.c3 : data_forecast.city.c4,
+                    icon: CIICWeather.ICON[img],
+                    temperature: (!!data_forecast.forecast.f1[0].fc ? data_forecast.forecast.f1[0].fc : data_forecast.forecast.f1[0].fd)
+                });
+            };
+            el.addClass(theme_name);
+            $.ajaxSetup({
+                cache: true
+            });
+            $.getScript(CIICWeather.template(CIICWeather.SERVICE_FORECAST, {
+                'areaid': CIICWeather.DEFAULT_AREAID
+            }));
+        }(window, window.jQuery));
+    </script>
+
+
+</body></html>

@@ -1,0 +1,101 @@
+.mo_16090_20161209 .tbox_01_b_16063_161205 .text p a { color:#575757;}
+body .l, body .left {
+	float:left;
+	clear:none;
+}
+.mo_16090_20161209 .tbox_01_b_16063_161205 .text p { color:#575757; font:normal 12px/18px Arial,"宋体"; margin:0;}
+a:hover, a:active {
+	text-decoration:underline;
+}
+body, div, p, ul, ol, dl, dt, dd, li, form, input, table, img, h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	padding:0;
+}
+.mo_16090_20161209 .tbox_01_b_16063_161205 .img_icon { background:url(http://p1.img.cctvpic.com/photoAlbum/templet/common/DEPA1447234009104236/icon_04.png) no-repeat; width:105px; height:10px; position:absolute; top:4px; left:4px; z-index:10;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src="style/img/icon_04.png");}
+.column_wrapper {
+	clear:both;
+	margin:0 auto;
+	text-align:left;
+	width:960px;
+	overflow:hidden;
+}
+.column_wrapper:after {
+	clear:both;
+	content:".";
+	display:block;
+	font-size:0;
+	height:0;
+	line-height:0;
+	visibility:hidden;
+}
+.mo_16090_20161209 .tbox_02_a_16063_161205 { background:url(http://p1.img.cctvpic.com/photoAlbum/templet/common/DEPA1447234009104236/bd_bg.gif) repeat-x; padding:5px 10px;border-top:dotted 1px #bdbdbd; height:auto; padding:6px 0 0;}
+.mo_16090_20161209 .tbox_01_b_16063_161205 .text h4 { color:#2d65a5; font:bold 12px/18px Arial,"宋体"; padding-bottom:6px; margin:0;}
+em, b, i {
+	font-style:normal;
+}
+ul:after, ol:after {
+	clear:both;
+	content:".";
+	display:block;
+	font-size:0;
+	height:0;
+	line-height:0;
+	visibility:hidden;
+}
+.mo_16090_20161209 .tbox_01_b_16063_161205 .text h4 a { color:#2d65a5;}
+body {
+	background:#fff;
+	color:#333;
+	margin:0;
+	font-family:"";
+	font-size:12px;
+}
+.mo_16090_20161209 .tbox_01_b_16063_161205 { clear:both;zoom:1;}
+.mo_16090_20161209 .tbox_02_a_16063_161205 p a { color:#575757;}
+p {
+	line-height:1.25em;
+}
+.mo_16090_20161209 .tbox_02_a_16063_161205 .last { margin-bottom:0;}
+a:link, a:visited {
+}
+.mo_16090_20161209 .tbox_01_b_16063_161205 .image img { border:4px solid #DEDCDC;width:98px;height:57px;}
+.mo_16090_20161209 .mo_bd { clear:both; padding:10px;}
+img, a img {
+	border:0 none;
+}
+a.on:hover, a.cur:hover, .on a:hover, .cur a:hover {
+	text-decoration:none;
+}
+.mo_16090_20161209 .tbox_01_b_16063_161205 .text { float:left; width:162px; padding-left:10px;}
+.mo_16090_20161209 .mo_hd { background:url(http://p1.img.cctvpic.com/photoAlbum/templet/common/DEPA1447234009104236/mo_hd_bg_16090_161209.gif) no-repeat; clear:both; height:22px; color:#fff; font:normal 19px/22px "微软雅黑","黑体"; padding-left:11px;}
+body .c, body .c {
+	text-align:center;
+}
+ul, ol {
+	list-style-type:none;
+}
+.mo_16090_20161209 .tbox_01_b_16063_161205 .image { float:left; width:107px; position:relative; height:65px; overflow:hidden;}
+.mo_16090_20161209 .tbox_02_a_16063_161205 p { color:#575757; font:normal 12px/19px Arial,"宋体";}
+.clear_float, .clear {
+	clear:both;
+	font-size:1px;
+	line-height:1px;
+	height:1px;
+	overflow:hidden;
+}
+body .r, body .right {
+	float:right;
+	clear:none;
+}
+.vspace {
+	height:10px;
+	font-size:0px;
+	line-height:0px;
+	width:99%;
+	clear:both;
+}
+a {
+	color:#000;
+	text-decoration:none;
+}
+.mo_16090_20161209 { clear:both;zoom:1;}

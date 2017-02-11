@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ifr跨域</title>
+<script type="text/javascript" src="../jquery-1.js"></script><style type="text/css">
+:root #ads > .dose > .dosesingle
+{ display: none !important; }</style><style type="text/css">iframe[src="https://pos.baidu.com/wh/o.htm?ltr="]
+{display:none !important;}</style>
+<script type="text/javascript">
+<!--
+document.domain = 'china.com.cn';
+$(document).ready(function(){
+	var url = window.location.hash.slice(1);
+	$.get(url, function(data){
+		window.parent.xml(data);
+	});
+})
+-->
+</script>
+</head>
+
+<body>
+
+
+</body></html>

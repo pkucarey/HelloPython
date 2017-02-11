@@ -1,0 +1,240 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*基础制作页面组件*/
+html, body, div, p, hr, pre, h1, h2, h3, h4, h5, h6, table, tr, td, th, tfoot, tbody, thead, form, fieldset, input, textarea, label, ul, ol, dl, li, dt, dd { margin:0; padding:0; border:0; outline:none; list-style:none; font-weight: normal; }
+li { list-style-type:none; }
+a { text-decoration:none; outline:none; color:#333; }
+a:hover { text-decoration:underline!important; color:#333; }
+table { border-collapse:collapse; border-spacing:0; margin:0 auto; clear:both; }
+fieldset, img { border:0; }
+.none { display:none; }
+.clear { clear:both; }
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+q:before, q:after { content:''; }
+a img { border:none; }
+.overhidden { overflow:hidden; _display:inline-block; }
+.align_c { text-align:center; }
+.align_l { text-align:left; }
+.left { float:left; }
+.right { float:right; }
+/* =body*/
+*html { _background-image:url(about:blank); _background-attachment:fixed; _overflow-x:hidden; text-align:left; }
+body { font-family:"宋体"; color: #333; font-size:12px; line-height:20px; text-align:left; }
+h1, h2, h3, h4, h5, h6 { font-weight:400; font-size:100%; }
+h2 { font-size:14px; font-weight:700; }
+/*通用图片*/
+.list { overflow:hidden; _display:inline-block; }
+.list li { vertical-align:middle; background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/common.png) 0 -158px no-repeat; font-size:14px; padding-left:15px; line-height:24px; overflow:hidden; height:24px; }
+.list_pic { margin-top:10px; overflow:hidden; _display:inline-block; width:100%; }
+.list_pic li { float:left; display:inline; }
+.list_pic .img a img { float:left; }
+.list_pic .name { text-align:center; line-height:18px; }
+.list_pic .name a { font-size:12px; }
+.bg_pic { margin-bottom:5px; }
+.bg_pic li { position:relative; height:80px; width:100px; margin:0 5px; }
+.bg_pic li .bg { background:#000; width:100%; opacity:0.4; filter:alpha(opacity=40); height:22px; z-index:10; left:0; bottom:0; position: absolute; }
+.bg_pic li .name { text-align:center; color:#fff; z-index:11; position:absolute; left:0; bottom:0; height:22px; line-height:22px; width:100%; overflow:hidden; }
+.bg_pic li .name a { color:#fff; }
+.bg_pic li .name a:hover { color:#fff; }
+#center .c_right .bg_pic { margin-bottom:13px; }
+#center .c_right .bg_pic li { position:relative; height:100px; width:135px; margin:0 8px; }
+#center .c_right .bg_pic li .bg { background:#000; width:100%; opacity:0.4; filter:alpha(opacity=40); height:22px; z-index:0; left:0; bottom:0; position: absolute; }
+#center .c_right .bg_pic li .name { text-align:center; color:#fff; z-index:0; position:absolute; left:0; bottom:0; height:22px; line-height:22px; width:100%; overflow:hidden; }
+#center .c_right .bg_pic li .name a { color:#fff; }
+#center .c_right .bg_pic li .name a:hover { color:#fff; }
+#center .c_right .jh360 .bg_pic { margin:5px 0; }
+/*页签样式*/ 
+#top .menu .tab { overflow:hidden; }
+#top .menu .tab .tab_title { height:27px; background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/v3_16.jpg) 0 100% repeat-x; }
+#top .menu .tab .tab_title ul { overflow:hidden; }
+#top .menu .tab .tab_title li { float:left; height:27px; width:90px; }
+#top .menu .tab .tab_title li a { float:left; width:90px; height:27px; line-height:27px; font-size:14px; font-weight:bold; text-align:center; color:#0a3372; background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/common.png) -246px 0 no-repeat; font-family:"微软雅黑"; }
+#top .menu .tab .tab_title li a:hover { color:#fff!important; }
+#top .menu .tab .tab_title li.active a { text-decoration:none; color:#fff; background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/common.png) -95px 0 no-repeat; }
+#top .menu .tab .tab_box { overflow:hidden; padding:0 10px; background:#fff; height:30px; line-height:30px; }
+#top .menu .tab .tab_box .tab_box_content { display:none; color:#dbdbdb; }
+#top .menu .tab .tab_box .tab_box_content a { color:#666; margin:0 5px; }
+/*内容*/
+#top, #center { width:1000px; margin:0 auto; }
+#top { background:#f8f8f8; border-bottom:1px solid #dbdbdb; }
+#top .bar { height:35px; background:#379be9; }
+#top .bar .left { padding-left:28px; color:#cfeaff; line-height:35px; width:400px; }
+#top .bar .right { color:#fff; line-height:35px; padding-right:10px; width:530px; }
+#top .bar .right a { color:#fff; margin:0 3px; }
+#top .bar .right a:hover { color:#fff!important; }
+#top .bar .logo { float:left; height:35px; width:65px; background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/common.png) no-repeat; text-indent:-555px; overflow:hidden; }
+#top .bar .date { float:left; padding-left:30px; font-size:13px; }
+#top #date { padding-right:20px; }
+#top .menu { padding-top:12px; height:65px; }
+#top .menu .left { float:left; width:524px; padding-left:10px; }
+#top .menu .right { float:right; width:442px; }
+#top .menu .menu_l { line-height:26px; border-bottom:1px solid #e6e5e5; color:#dddddd; }
+#top .menu .menu_l a { color:#252525; margin:0 7px; }
+#top .menu .zxbb { line-height:30px; color:#dddddd; height:30px; overflow:hidden; }
+#top .menu .zxbb .tit { color:#035cca; float:left; padding-left:8px; }
+#top .menu .zxbb a { color:#666; }
+#top .bread { padding:12px 0 8px; overflow:hidden; _display:inline-block; }
+#top .bread .left { width:600px; height:30px; overflow:hidden; }
+#top .bread .index { float:left; margin:0 10px 0 20px; display:inline; width:90px; height:30px; background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/common.png) -314px -100px no-repeat; }
+#top .bread .pd { float:left; margin:2px 20px 0 0; display:inline; height:24px; background:#379be9; padding:0 5px; color:#fff; font:bold 20px/24px "微软雅黑"; }
+#top .bread .s_pd { float:left; line-height:40px; color:#000; }
+#top .bread .right { width:330px; position:relative; }
+#top .bread .right .ss { width:280px; height:24px; line-height:24px; border:1px solid #ddd; padding:0 30px 0 10px; background:#fff url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/common.png) 290px -65px no-repeat; }
+#top .bread .right .ss_submit { background:url(http://www.xinhuanet.com/images/syicon/space.gif); border:none; width:25px; height:25px; position:absolute; right:10px; top:0; cursor:pointer; z-index:99; }
+#center { padding-top:15px; text-align:left; }
+#center .c_left { float:left; width:640px; text-align:left; padding-bottom:40px; overflow:hidden; }
+#center .c_right { float:right; width:329px; text-align:left; }
+#center .main_tit { text-align:center; margin-bottom:20px; }
+#center .main_tit h1 { font:bold 22px/35px "宋体"; }
+#center .main_tit .info { border-bottom:1px solid #ccc; line-height:35px; height:35px; }
+#center .share { line-height:40px; border-bottom:1px dashed #ccc; margin-bottom:15px; }
+#center .share .right { color:#7f7f7f; padding-right:10px; }
+#content { font-size:14px; line-height:2em; overflow:hidden; }
+#content p { padding-bottom:15px; }
+#content strong{ font-weight:bold;}
+#center .yzyd { margin-bottom:20px; }
+#center .yzyd .left { width:380px; }
+#center .yzyd .right { width:220px; border-left:1px solid #e5e5e5; padding-left:15px; }
+#center .xgtj1 { padding:10px 0; border-bottom:1px dashed #ddd; }
+#center .xgtj1 img { float:left; padding-right:10px; }
+#center .xgtj1 h3 a { color:#2d4d86; font-weight:bold; font-size:13px; }
+#center .yzyd h2 { font:bold 18px/26px "微软雅黑"; }
+#center .wyak { margin-bottom:15px; border-bottom:1px dotted #ddd; padding-bottom:15px; text-align:left; }
+#center .wyak .tit { border-top:2px solid #333333; line-height:50px; height:50px; overflow:hidden; margin-bottom:10px; }
+#center .wyak .pd { float:left; margin:13px 5px 0 0; display:inline; height:24px; background:#379be9; padding:0 5px; color:#fff; font:bold 20px/24px "微软雅黑"; }
+#center .wyak .wyak_bg { float:left; margin:12px 20px 0 0; display:inline; width:95px; height:28px; background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/common.png) -190px -100px no-repeat; }
+#center .wyak .gjc { float:right; width:460px; text-align:right; }
+#center .wyak .gjc a { margin:0 6px; }
+#center .wyak .left_pic { width:160px; height:135px; position:relative; float:left; }
+#center .wyak .left_pic .bg { background:#000; width:100%; opacity:0.4; filter:alpha(opacity=40); height:26px; z-index:10; left:0; bottom:0; position: absolute; }
+#center .wyak .left_pic .name { text-align:center; color:#fff; z-index:11; position:absolute; left:0; bottom:0; height:26px; line-height:26px; width:100%; overflow:hidden; }
+#center .wyak .left_pic .name a { color:#fff; }
+#center .wyak .left_pic .name a:hover { color:#fff; }
+#center .wyak .right_list { float:right; width:460px; }
+#center .wyak .right_list .imp { padding-bottom:8px; height:22px; overflow:hidden; }
+#center .wyak .right_list .imp a { font:bold 16px/26px "微软雅黑"; }
+#center .wyak .right_list li { line-height:28px; }
+#center .wyak .right_list li a { font-size:14px; }
+#center .pinglun { margin:15px 0; }
+#center .kjlj { text-align:center; margin-bottom:15px; }
+#center .kjlj a { display:inline-block; width:100px; padding-right:14px; text-align:center; height:34px; line-height:36px; border:1px solid #cdcdcd; background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/common.png) 0 -274px no-repeat; }
+#center .combox { border:1px solid #ddd; border-top:3px solid #379be9; margin-bottom:15px; }
+#center .combox h2 { height:40px; font:bold 16px/40px "微软雅黑"; padding-left:15px; border-bottom:1px solid #ddd; }
+#center .combox .con { padding:10px; }
+#center .combox2 { border:1px solid #ddd; margin-bottom:15px; padding:10px; }
+#center .pdtj { border:1px solid #ddd; border-top:5px solid #379be9; }
+#center .c_right .pdtj .bg_pic { padding:0; padding-bottom:10px; margin:5px 0 10px 0; border-bottom:none; border-bottom:1px dotted #ddd; }
+#center .c_right .pdtj .bg_pic li { position:relative; height:100px; width:135px; margin:0 9px 10px 9px; }
+#center .c_right .tjsp .bg_pic { padding:0; margin:5px 0 10px 0; border-bottom:none; }
+#center .c_right .tjsp .bg_pic li { position:relative; height:100px; width:135px; margin:0 8px 10px; }
+#center .pdtj .tw { padding-bottom:20px; margin-bottom:12px; border-bottom:1px dotted #ddd; overflow:hidden; _display:inline-block; }
+#center .pdtj .tw h3 a { font-size:14px; font-weight:bold; color:#004276; line-height:30px; }
+#center .pdtj .tw img { float:left; padding-right:10px; }
+#center .pdtj .tw .des { text-indent:24px; color:#666; line-height:24px; }
+#center .pdtj .list { margin-bottom:6px; }
+#center .pdtj .rdgc p { line-height:28px; }
+#center .pdtj .rdgc .bt { color:#0060ce; font-weight:bold; font-size:14px; margin-right:5px; }
+#center .pdtj .rdgc a { font-size:14px; }
+#center .djph .tab { overflow:hidden; }
+#center .djph .tab .tab_title { height:40px; background:none; border-bottom:1px solid #e5e5e5; }
+#center .djph .tab .tab_title ul { overflow:hidden; }
+#center .djph .tab .tab_title li { float:left; height:40px; width:109px; }
+#center .djph .tab .tab_title li a { float:left; width:109px; height:40px; line-height:40px; font-size:16px; font-weight:bold; text-align:center; color:#666; background:#fff; font-family:"微软雅黑"; }
+#center .djph .tab .tab_title li.active a { text-decoration:none; color:#000; background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/common.png) -57px -98px no-repeat; }
+#center .djph .tab .tab_box { overflow:hidden; padding:10px; background:#fff; _float:left; }
+#center .djph .tab .tab_box .tab_box_content { display:none; overflow:hidden; }
+#center .djph .list li a { font-size:13px; color:#444; }
+#center .c_right .tjtp .bg_pic { padding:0; margin:5px 0 0 0; border-bottom:none; }
+#center .c_right .tjtp .bg_pic li { position:relative; height:100px; width:135px; margin:0 8px 10px; }
+#center .rsb h2 span { float:right; margin-right:20px; display:inline; font:normal 12px/40px "宋体"; }
+#center .rsb .list li { width:138px; float:left; }
+#center .rsb .list li a { font-size:14px; }
+/*正文区*/
+#center #pubtime { float:left; padding-left:10px; }
+#center #source { float:left; padding-left:10px; }
+#center #wyhs { float:left; padding-left:10px; }
+#center .set_font { float:right; margin-left:10px; display:inline; }
+#center .set_font a { float:left; width:24px; height:24px; margin-right:6px; display:inline; background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/common.png) 0 -383px no-repeat; }
+#center .set_font .font_small:hover { background-position:0 -356px; }
+#center .set_font .font_small_dis { background-position:-26px -383px; cursor:default; }
+#center .set_font .font_small_dis:hover { background-position:-26px -383px; cursor:default; }
+#center .set_font .font_add { background-position:0 -329px; }
+#center .set_font .font_add:hover { background-position:-26px -356px; }
+#center .set_font .font_add_dis { background-position:-26px -329px; }
+#center .set_font .font_add_dis:hover { background-position:-26px -329px; }
+#foot { background:#379be9; height:40px; line-height:40px; overflow:hidden; width:1000px; margin:0 auto; color:#fff; }
+#foot .content { width:1000px; margin:0 auto; color:#fff; text-align:center; }
+#foot .content a { color:#fff; }
+.ad_left1{ margin-bottom:15px;}
+.ad_left2 { margin-bottom:15px; clear:both; overflow:hidden; _display:inline-block; }
+.ph { position:relative; height:426px; }
+.ph .tit { position:absolute; left:0; top:0; height:45px; }
+.ph .tit a { float:left; width:108px; height:45px; }
+.pl_more { display:none; }
+.piaofu_on { position:fixed; left:50%; top:0; margin-left:171px; width:330px; }
+.kx { width:436px; height:45px; position:fixed; bottom:0; left:50%; margin-left:-220px; display:none; z-index:50; background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/common.png) 0 -220px no-repeat; }
+.kx .tit{ width:45px; height:45px; float:left; font:500 18px/45px "微软雅黑"; color:#fff; padding-left:20px; overflow:hidden; padding-right:5px;}
+#kx_text { line-height:45px; float:left; width:290px; padding-left:13px; margin-left:15px; display:inline; overflow:hidden; background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/common.png) 0 -150px no-repeat; }
+#kx_text a { font-size:14px; }
+.kx .close { width:20px; height:20px; position:absolute; right:20px; top:15px; }
+#hl-Show { text-align:left; }
+#hl-Show .bt01 { color:#333; line-height:24px; font-size:14px; }
+#hl-Show .tit_Extend { margin-bottom:10px; }
+#bdshare .tit { float:left; }
+#bdshare .bds_more { line-height:20px; }
+#bshare01 { float:right; }
+#bshare02 { float:left; }
+.share .tit { float:left; }
+#gd_area { width:450px; height:30px; line-height:30px; overflow:hidden; float:left; position:relative; }
+#gd_area .wrap { float: left; }
+#gd_content, #gd_scroll { position:absolute; left:0; top:0; width:1000000px; }
+#gd_content li, #gd_scroll li { height:30px; color:#333; padding:0; float:left; line-height:30px; width:450px; }
+#gd_content li a, #gd_scroll li a { font-size:12px; }
+#hl-RelationDiv { display:none; }
+#div_currpage { font-size:14px; }
+#div_currpage a { color:#009; font-size:14px; }
+#bsPanelHolder { }
+/* ===访客导航=== */
+#now { height: 220px; width: 280px; position: fixed; _position:absolute; top: 30px; right: 0px; border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; border-top-color: #0A94FF; border-bottom-color: #0A94FF; border-left-width: 2px; border-left-style: solid; border-left-color: #0A94FF; background-color: #FFFFFF; z-index:9999; }
+#open { position: fixed; _position:absolute; top: 30px; right: 0px; height: 30px; width: 40px; font-family: "微软雅黑"; color: #FFFFFF; background-color: #BD0000; font-size: 13px; text-align: center; line-height: 30px; cursor:pointer; }
+#now .tit { background-image: url(http://www.xinhuanet.com/xilan/20110720/tit.gif); background-repeat: no-repeat; height: 40px; position: relative; }
+#now .tit .close { height: 19px; width: 25px; position: absolute; left: 248px; top: 8px; }
+#now .rc { font-family: "微软雅黑"; font-size: 16px; text-align: center; line-height: 26px; }
+#now .rc a { color: #013698; text-decoration: underline; }
+#now ul { margin: 6px; padding: 6px; }
+#now ul li { font-size: 12px; color: #666666; text-decoration: none; list-style-type: none; line-height: 22px; }
+#now ul li a { color: #666666; text-decoration: none; }
+#now ul li a:hover { color: #666666; text-decoration: underline; }
+/* ===纠错=== */
+.tiyi1 { position:relative; z-index:100; }
+.tiyi1 .tiyi01 { position:absolute; left:-445px; top:25px; background-color:#FFF; height:342px; width:600px; visibility:visible; }
+.tiyi1 .tiyi03 { position:absolute; left:570px; top:2px; background:url("http://www.xinhuanet.com/images/syicon/space.gif") 0 -131px no-repeat; width: 24px; height: 24px; }
+.tiyi1 .advise, .tiyi1 .advise2 { cursor:pointer; color:#8a0000 }
+#center .cnxh { margin-bottom:15px; display:none; }
+#center .cnxh h2 { font:bold 18px/26px "微软雅黑"; padding-left:5px; height:35px; }
+#center .cnxh .list { margin-left:15px; }
+#center .cnxh .list li { float:left; width:280px; padding-right:10px; }
+.detailinfo { color: #818181; line-height: 20px; text-align: left; text-indent: 2em; }
+/*广告背景*/
+#center  #right_ad1{ background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/bg_ad_xilan.gif) 100% 0 no-repeat; padding-top:18px;}
+#center  #right_ad2{ background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/bg_ad_xilan.gif) 100% 0 no-repeat; padding-top:18px;}
+#center  #right_ad3{ background:url(http://www.xinhuanet.com/static/xilan/xilan_v1/images/bg_ad_xilan.gif) 100% 0 no-repeat; padding-top:18px;}
+
+#ad_top{ text-align:center;}
+/*炫空间登录*/
+.xh-news,.sw,.btn_lt{background:url(http://www.xinhuanet.com/home/new/img/xuan-login.png) no-repeat; }
+#top .bar .right .xuan-logoin-form{/* width:290px;*/ font-size:12px; line-height:25px; position:relative; float:right; padding-top:3px;}
+.xuan-logoin-form .sw {	z-index: 5;float: left;padding-left: 18px;margin-right: 5px;display: inline;text-decoration: none;outline: none;color: #333;background-position:0px 4px;}
+.xuan-logoin-form input{height: 18px; width: 55px; border:1px solid #ccc; vertical-align:middle; outline:none;}
+.xuan-logoin-form input.btn_lt {border: none;width: 37px;height: 21px;cursor: pointer; vertical-align:middle; background-position:0px -89px;}
+.xuan-logoin-form a.btn_lt { display:inline-block;border: none;width: 37px;height: 21px;cursor: pointer; vertical-align:middle; background-position:0px -119px;}
+.xuan-logoin-form span{ line-height:20px; width:55px; font-size:12px; color:#9f9f9f; padding-left: 5px;}
+.xuan-logoin-form span.account{ display:block; position:absolute; top:5px; left:58px;}
+.xuan-logoin-form span.psw{ display:block; position:absolute; top:5px; left:120px;}
+
+.ewm_area{ height:130px; padding-top:10px; background:#f8f8f8; margin-bottom:5px; }
+.ewm_area img{ float:left; display:inline; margin:0 15px;}
+.ewm_area .info{   font-size:18px; font-family:"微软雅黑"; padding-right:20px; line-height:38px;}

@@ -1,0 +1,23 @@
+/*初始化*/
+* { margin: 0; padding: 0; }
+body { font-family:  "Microsoft YaHei", "微软雅黑", "SimSun", "宋体"; font-size: 12px; color: #000; line-height: 20px; background: #FFF; }
+a { color: #000; text-decoration: none; }
+ol, ul, li { list-style-type: none; }
+img { border: none; }
+
+/*全局*/
+.fl { float: left; }
+.fr { float: right; }
+.wrap { width: 980px; overflow: hidden; margin: 0px auto; zoom: 1; }
+
+/*功能*/
+.shareBox { width: 112px; margin-left: 510px; position: fixed; left: 50%; top: 200px; _position: absolute; _top : expression(documentElement.scrollTop + 290 + "px"); }
+.shareBox p { text-align: center; }
+.shareBox .p1 { margin-bottom: 40px; }
+.shareBox .p2 { cursor: pointer; }
+
+/*分页*/
+.autopage { font-weight: bold; text-align: center; clear: both; width: 100%; padding-top: 20px; }
+.autopage a { font-weight: bold; background: #FFF; border: 1px solid #DDD; padding: 5px; }
+.autopage span { font-weight: bold; background: #FFF; border: 1px solid #DDD; padding: 5px; cursor: pointer; }
+.autopage .cur { background: none; border: none; cursor: auto; }

@@ -33,6 +33,8 @@ def get_weight_bias(vgg_layers, i,):
   weights = vgg_layers[i][0][0][0][0][0]
   weights = tf.constant(weights)
   bias = vgg_layers[i][0][0][0][0][1]
+  print(bias)
+  bias = np.array(bias)
   bias = tf.constant(np.reshape(bias, (bias.size)))
   return weights, bias
 

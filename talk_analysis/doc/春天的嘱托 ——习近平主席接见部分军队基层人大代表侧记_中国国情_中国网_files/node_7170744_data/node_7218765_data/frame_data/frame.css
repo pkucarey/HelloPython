@@ -1,0 +1,18 @@
+@charset 'utf-8';
+.ml5 { margin-left: 5px; }
+
+/* size */
+.theme1,.theme4,.theme5,.theme6,.theme8,
+.theme0 { font-size: 12px; height: 20px; line-height: 20px; }
+.theme2,.theme3,.theme7 { font-size: 14px; height: 30px; line-height: 30px; }
+
+/* color */
+.theme1,.theme3,.theme1 a,.theme3 a { background: #CF0101; color: #FFF; }
+.theme4,.theme4 a { background: #52C4A3; color: #FFF; }
+.theme5,.theme5 a { background: #E5E5E5; color: #000; }
+.theme6,.theme6 a { background: #0E9BFD; color: #FFF; }
+.theme7,.theme7 a { background: #C7A961; color: #FFF; }
+.theme8,.theme8 a { background: #115D8F; color: #FFF; }
+
+.korean { font-size: 40px;  line-height: 64px; height: 64px; }
+.korean a { display: none; }

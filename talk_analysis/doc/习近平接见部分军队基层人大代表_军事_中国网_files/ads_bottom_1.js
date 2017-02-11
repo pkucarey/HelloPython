@@ -1,0 +1,1 @@
+document.write('<script type="text/javascript">FTAPI_slotid = 1007025;FTAPI_sync = true;<\/script><script type="text/javascript" src="http://pic.fastapi.net/sdk/js/a.js" charset="utf-8"><\/script>');

@@ -1,0 +1,46 @@
+@charset "utf-8";
+/*初始化*/
+* { margin: 0px; padding: 0px; }
+body { font-family: "微软雅黑"; font-size: 12px; color: #000; line-height: 24px; }
+a { color: #000; text-decoration: none; }
+a:hover { text-decoration: underline; }
+ol, ul, li { list-style-type: none; }
+img { border: none; }
+
+/*页面版权*/
+#footer { text-align: center; clear: both; width: 980px; margin: 0px auto; }
+
+/*页面返回顶部*/
+#webTop { display: none; width: 75px; height: 75px; margin-left: 500px; cursor: pointer; position: fixed; left: 50%; bottom: 20px; _position: absolute; _top : expression(documentElement.scrollTop + 460 + "px"); }
+#top { width: 60px; height: 130px; position: fixed; _position: absolute; right: 20px; bottom: 20px; top: auto; }
+#top li { width: 60px; height: 60px; overflow: hidden; margin-top: 5px; cursor: pointer; }
+#gn1 { background: url(http://images.china.cn/images1/ch/2012gq/kn_i1.gif); }
+#gn1:hover { background: url(http://images.china.cn/images1/ch/2012gq/kn_i1_cur.gif); }
+#gn2 { background: url(http://images.china.cn/images1/ch/2012gq/kn_i2.gif); }
+#gn2:hover { background: url(http://images.china.cn/images1/ch/2012gq/kn_i2_cur.gif); }
+#gn3 { background: url(http://images.china.cn/images1/ch/2012gq/kn_i3.gif); }
+#gn3:hover { background: url(http://images.china.cn/images1/ch/2012gq/kn_i3_cur.gif); }
+
+/*页面分页*/
+#autopage { color: #CC0001; font-weight: bold; clear: both; padding-top: 20px; }
+#autopage a { color: #003F7D; font-weight: bold; border: 1px solid #DDDDDD; padding: 5px; }
+
+/*公用样式*/
+.w260 { width: 260px; }
+.w300 { width: 300px; }
+.w320 { width: 320px; }
+.w350 { width: 350px; }
+.w400 { width: 400px; }
+.w440 { width: 440px; }
+.w710 { width: 710px; }
+.wrap { clear: both; width: 980px; height: 1%; overflow: hidden; margin: 0px auto; }
+.both { clear: both; width: 100%; height: 10px; overflow: hidden; }
+.left { float: left; }
+.right { float: right; }
+.border { border: 1px solid #CCC; }
+.mLeft10 { display: inline; margin-left: 10px; }
+.mBottom10 { margin-bottom: 10px; }
+.columnTitle { font-size: 14px; line-height: 30px; background: url(http://images.china.cn/images1/ch/2012gq/b_8.gif) repeat-x left bottom; height: 30px; overflow: hidden; }
+.inList h2 span { font-weight: normal; line-height: 29px; text-align: center; border-right: 1px solid #CCC; display: block; float: left; width: 128px; height: 29px; }
+.inList .cur { font-weight: bold; background: url(http://images.china.cn/images1/ch/2012gq/b_9.gif) no-repeat 15px 14px; border-bottom: 1px solid #FFF; padding-right: 1px; }
+.ciicChina { width: 120px; height:170px; overflow: hidden; margin-left: -620px; position: fixed; left: 50%; top: 290px; _position: absolute; _top : expression(documentElement.scrollTop + 290 + "px"); }

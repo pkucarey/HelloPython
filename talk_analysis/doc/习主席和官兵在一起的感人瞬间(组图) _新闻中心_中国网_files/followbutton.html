@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>关注按钮-微博</title>
+<link href="followbutton_data/followButton.css" rel="stylesheet" type="text/css">
+<!--
+<link href="http://img.t.sinajs.cn/t4/appstyle/widget/css/followButton/followButton.css" rel="stylesheet" type="text/css">
+-->
+<script type="text/javascript">
+
+var scope = {};
+scope.uid = '1791805181';
+scope.btn = 'red';
+scope.write = '0';
+scope.refer = 'www.china.com.cn';
+scope.uname = '中国网新闻中心';
+scope.appkey = '2331954988';
+scope.language = 'zh_cn';
+scope.confirm = '0';
+scope.current_user_weibo = '';
+scope.current_user_sina = '';
+
+
+	var $CONFIG = {
+                Swsrc: 'app_follow_button'
+	};
+
+</script>
+</head>
+<body>
+
+<!-- 显示昵称和粉丝数 -->
+			<div class="WB_widgets WB_FB_show">
+			<a href="#" class="WB_widgets WB_followButton" id="followBtn">
+				<span class="FB_typeB" id="fStatus"><em class="WB_icon"></em><span class="WB_icon_text" id="fText">加关注</span></span>
+			</a>
+			<span class="WB_widgets WB_FB_info">
+				<a href="http://weibo.com/newsnewschina" title="中国网新闻中心" class="WB_user" target="_blank">中国网新闻中心</a><span class="WB_approve_co" title="新浪认证"></span><i class="FB_info_more">(粉丝58.8万)</i>
+			</span>
+		</div>
+	<!-- /显示昵称和粉丝数 -->
+
+
+<script type="text/javascript" src="followbutton_data/sso.js"></script>
+<script src="followbutton_data/followButton.js" type="text/javascript"></script>
+<!-- SUDA_CODE_START -->
+
+<script>
+        var SUDA = SUDA || [];
+        SUDA.push(['setGatherInfo', '', 'www.china.com.cn', '']);
+</script>
+
+<script type="text/javascript" charset="utf-8" src="followbutton_data/suda.js"></script>
+<!-- SUDA_CODE_END -->
+
+
+</body></html>

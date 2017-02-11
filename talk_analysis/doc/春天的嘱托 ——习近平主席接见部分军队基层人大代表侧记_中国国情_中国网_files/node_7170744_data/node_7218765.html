@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>白色顶部</title>
+<!-- base href="http://www.china.com.cn/node_7218765.htm" -->
+<style type="text/css">
+<!--
+        * { margin: 0px; padding: 0px; }
+        body { font-family: "宋体"; font-size:12px; color:#000; background: #FFF; }
+        ul,li,dl,dt,dd{ list-style:none }
+        a { text-decoration:none; color:#000; }
+        img{ border:none; }
+        
+        .top{ height:38px; border-bottom:2px solid #d3d3d3;}
+        .top ul{ width:975px; height:38px; margin:0 auto; padding-left:5px; }
+        .top ul li{ height:38px; line-height:38px; float:left; color:#000; }
+        .top ul li a{ color:#000 }
+        .top ul li.mr35{ margin-right:35px;}
+        .top ul li.mr55{ margin-right:65px;}
+        .top ul li.mr100{ margin-right:110px;}
+        .top ul li.mr13{ margin-right:13px;}
+        
+        form.search{ width:114px; height:24px; border:1px solid #000000; background:none; margin-top:7px; }
+        form.search .sr1{ height:24px; line-height:24px; width:90px; float:left; border:#fff solid 0; float:left; background:none; color:#000; }
+        form.search .an1{ width:24px; height:24px; background:url(http://images.china.cn/images1/ch/2009culture/bbb.jpg); border:#ffffff solid 0; float:left; cursor:pointer; }
+        
+        .main { width: 980px; overflow: hidden; margin: 0px auto; zoom: 1;}
+        .logo1 { float: left; margin-top: 10px; }
+        .logo2 { float:right; margin:10px 16px 0px 0px; }
+        .main1 { float:left; font-size:14px; line-height:19px; margin-top:24px; margin-right:10px; width:655px; text-align: center; }
+        .main1 a { margin:0px 8px; }
+        .bg { background: #E60000; clear: both; width: 100%; height: 5px; overflow: hidden; }
+    
+-->
+</style>
+
+<script type="text/javascript" src="node_7218765_data/jquery-1.js">
+</script><style type="text/css">
+:root #ads > .dose > .dosesingle
+{ display: none !important; }</style><style type="text/css">iframe[src="https://pos.baidu.com/wh/o.htm?ltr="]
+{display:none !important;}</style>
+</head>
+<body>
+<div class="top">
+<ul>
+<li class="mr35"><a href="javascript:void(0);" onclick="setHome(this,'http://www.china.com.cn')">设为首页</a> | <a href="javascript:void(0);" onclick="shoucang('中国网','http://www.china.com.cn')">加入收藏</a></li>
+
+<li class="mr55"><a href="http://m.china.com.cn/index.html">手机版</a> | <a href="http://download.china.cn/ch/exe/kb-zhongguowang.exe">桌面下载</a> | <a href="http://mail.china.com.cn/cgi-bin/index.cgi">邮箱登陆</a> | <a href="http://forum.china.com.cn/member.php?mod=register">论坛注册</a> | <a href="http://hao.china.com.cn/">站点导航</a></li>
+
+<li class="mr100">
+<form class="search" action="http://search1.china.com.cn/search/searchcn.jsp" target="_blank"><input id="keyword" name="searchText" class="sr1" type="text"> <input name="searchBtn" class="an1" value=" " type="submit"> <input name="strSortBy" size="49" value="0" type="hidden"> <input name="LateTag" value="1" type="hidden"></form>
+</li>
+
+<li class="mr13"><span id="timeBox" style="float: left; margin-right: 5px;">2017.2.11 星期六</span> <iframe id="weatherIfr" src="node_7218765_data/frame.html" scrolling="no" marginheight="0" style="margin-top: 10px;" width="85" height="17" frameborder="0"></iframe></li>
+
+<li><a href="http://weather.china.com.cn/">定制</a></li>
+</ul>
+</div>
+
+<script type="text/javascript">
+<!--
+        var myDate=new Date();
+        var day=myDate.getDay();
+        var week=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+        $('#timeBox').html(myDate.getFullYear() +'.'+ (myDate.getMonth() + 1) +'.'+ myDate.getDate() +' '+ week[day]);
+        
+        //设置为主页 
+function setHome(obj,vrl) {
+    try{
+        obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+    }
+    catch(e) {
+        if(window.netscape) {
+            try {
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }
+            catch(e) {
+            alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+            }
+            var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+            prefs.setCharPref('browser.startup.homepage',vrl);
+        } else {
+            alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+        }
+    }
+}
+
+// 加入收藏 兼容360和IE6 
+function shoucang(sTitle,sURL) {
+    try {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e) {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+    
+-->
+</script>
+
+</body></html>
