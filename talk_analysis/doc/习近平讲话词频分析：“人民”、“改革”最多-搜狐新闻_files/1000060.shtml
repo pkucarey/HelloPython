@@ -1,0 +1,6 @@
+(function(){
+    AD_DATA = window["AD_DATA"] || {};
+    AD_DATA["10115"] = [{},{"data":{"DEFAULT":{"resource":{"type":"image","file":"https:\/\/images.sohu.com\/saf\/a2017\/0113\/wKiDRFh4mbSATNPmAABtEG4eAnI531.gif","width":300,"height":250,"md5":"10qb70001002GU006ah2004J5","click":"https:\/\/clk.optaim.com\/event.ng\/Type=click&FlightID=201612&TargetID=sohu&Values=4e7da032,b54fb143,01b67922,893950a2&AdID=3817425","imp":"https:\/\/imp.optaim.com\/201612\/4e7da032b54fb14301b67922893950a2.php?a=0"},"monitorkey":"10qb70001002GU006ah2004J5","adid":"18171"}}}];
+})();
+
+// w0:20170208160432:T0

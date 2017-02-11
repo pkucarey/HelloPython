@@ -1,0 +1,8 @@
+1.安装adobe flash player插件
+下载最新的插件包，解压
+sudo cp libflashplayer.so /usr/lib/firefox-addons/plugins/
+
+2.bingdict
+downthemall
+stylish
+ublock origin

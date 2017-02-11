@@ -77,5 +77,7 @@ def main():
     model = load_model_json('bird')
 
     print(model.predict_classes(X))
+    print(model.predict_proba(X))
+    
 
 main()

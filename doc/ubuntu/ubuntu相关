@@ -1,6 +1,7 @@
 1.bleachbit在python版本为3.6上运行
 modify the python to python2.7 in the first line of "/usr/bin/bleachbit"
 
-2.firefox安装adobe flash player插件
-下载最新的插件包，解压
-sudo cp libflashplayer.so /usr/lib/firefox-addons/plugins/
+2.输入法图标不见了
+#killall ibus-daemon
+#ibus-daemon -d
+fcitx

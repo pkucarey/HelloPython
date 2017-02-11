@@ -5,5 +5,7 @@
 <pydev_pathproperty name="org.python.pydev.PROJECT_SOURCE_PATH">
 <path>/${PROJECT_DIR_NAME}/bird</path>
 <path>/${PROJECT_DIR_NAME}/dogs_vs_cats</path>
+<path>/${PROJECT_DIR_NAME}/deep-learning-models-master</path>
+<path>/${PROJECT_DIR_NAME}/neuralart_tensorflow-master</path>
 </pydev_pathproperty>
 </pydev_project>

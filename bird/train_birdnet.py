@@ -16,15 +16,22 @@ DIM_ORDERING = 'tf'
 DATA_ROOT_DIR = '/media/carey/000A768C0005BE99/bird/cub/CUB_200_2011/'
 PARAM_ROOT_DIR = '/media/carey/000A768C0005BE99/bird/cub/param/'
 
-
 def read_images(image_target_size):
     image_root_dir = DATA_ROOT_DIR + 'images/'
     subdirs = os.listdir(image_root_dir)
 
+    sub_index = 0
+    num_labels = 0
+
     images = []
         
     for subdir in sorted(subdirs):
+        if sub_index == 2:
+            break
+        sub_index = sub_index + 1
+        print('reading ', subdir)
         files = os.listdir(os.path.join(image_root_dir, subdir))
+        num_labels = num_labels + len(files)
 
         for file in sorted(files):
             image_path = os.path.join(image_root_dir, subdir, file)
@@ -36,16 +43,16 @@ def read_images(image_target_size):
 
     images = np.stack(images, axis=0)
 
-    return images
+    return (images, num_labels)
 
 
-def read_class_labels():
+def read_class_labels(num_labels):
     with open(DATA_ROOT_DIR + 'image_class_labels.txt', 'r') as f:
         lines = f.read().splitlines()
         # decrement by one to obtain labels starting from zero
         y = [int(line.split(' ')[1]) - 1 for line in lines]
 
-    return np.array(y)
+    return np.array(y[0 : num_labels])
 
 
 def train_test_split(X, y, split=0.1):
@@ -118,12 +125,13 @@ def load_model_yaml(filename):
 
 def main():
     # read input and output data
+    print('reading data..')
     image_target_size = (80, 80)
     image_width = image_target_size[0]
     image_height = image_target_size[1]
 
-    X = read_images(image_target_size)
-    y = read_class_labels()
+    (X, num_labels) = read_images(image_target_size)
+    y = read_class_labels(num_labels)
     
     assert len(X) == len(y)
 
@@ -135,6 +143,7 @@ def main():
     batch_size = 128
     num_epoch = 60
 
+    print('initializing model..')
     model = Sequential()
 
     # convolution 1
@@ -172,7 +181,8 @@ def main():
     model.add(Dense(num_output_classes))
     model.add(Activation('softmax'))
 
-    # fit
+    # fit    
+    print('training data..')
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
     model.fit(X_train, Y_train, batch_size=batch_size, nb_epoch=num_epoch,
               validation_data=(X_test, Y_test))
@@ -181,6 +191,7 @@ def main():
     # accuracy = model.evaluate(X_test, Y_test)
     # print('Model performance:', accuracy)
 
+    print('saving parameters..')
     save_model_json(model,'bird')
     save_model_yaml(model,'bird')
 
