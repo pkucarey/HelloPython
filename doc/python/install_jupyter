@@ -1,0 +1,4 @@
+sudo apt-get install ipython ipython-notebook
+sudo -H pip install jupyter
+sudo pip3 install pypandoc
+sudo pip3 install urllib3

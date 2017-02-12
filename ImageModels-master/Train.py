@@ -34,7 +34,7 @@ model_choice = dict(AlexNet=AlexNetModel,
                     VGG19=VGG19Model)
 
 
-model_val = 'AlexNet'
+model_val = 'VGG19'
 test_batch = False
 get_graph = False
 show_activation = True
@@ -158,7 +158,8 @@ if show_activation:
 
     print('Number of Layers to choose from: {}'.format(n_layers))
     zip(model.layers, range(n_layers))
-    layer_n = input('Enter a Number for the Layer to Viz: ')
+    #layer_n = input('Enter a Number for the Layer to Viz: ')
+    layer_n = 1
 
     def get_activations(model, layer, X_batch):
         # Credit for this function belongs to *damaha* (Github Username)
@@ -166,7 +167,7 @@ if show_activation:
         # from keras import backend as K
 
         get_activations = K.function(
-            [model.layers[0].input, K.learning_phase()], model.layers[layer].output)
+            [model.layers[0].input, K.learning_phase()], [model.layers[layer].output])
         activations = get_activations([X_batch, 0])
 
         return activations

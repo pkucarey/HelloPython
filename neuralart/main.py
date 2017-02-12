@@ -7,9 +7,9 @@ import os
 
 IMAGE_W = 800 
 IMAGE_H = 600 
-CONTENT_IMG =  './images/Taipei101.jpg'
-STYLE_IMG = './images/StarryNight.jpg'
-OUTOUT_DIR = './results'
+CONTENT_IMG =  './images/reference_image.jpg'
+STYLE_IMG = './images/base_image.jpg'
+OUTOUT_DIR = './images/results'
 OUTPUT_IMG = 'results.png'
 VGG_MODEL = './models/imagenet-vgg-verydeep-19.mat'
 INI_NOISE_RATIO = 0.7
@@ -33,8 +33,8 @@ def get_weight_bias(vgg_layers, i,):
   weights = vgg_layers[i][0][0][0][0][0]
   weights = tf.constant(weights)
   bias = vgg_layers[i][0][0][0][0][1]
-  print(bias)
-  bias = np.array(bias)
+  #print(bias)
+  #bias = np.array(bias)
   bias = tf.constant(np.reshape(bias, (bias.size)))
   return weights, bias
 
