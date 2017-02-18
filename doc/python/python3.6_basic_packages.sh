@@ -1,4 +1,6 @@
 sudo pip3 install matplotlib
+sudo pip3 install pandas
+sudo pip3 install jieba
 sudo pip3 install nolearn
 sudo pip3 install torch
 sudo pip3 install MXNet
@@ -7,6 +9,7 @@ sudo pip3 install keras
 sudo pip3 install Pillow
 sudo pip3 install tensorflow
 sudo pip3 install scikit-learn
+sudo pip3 install scikit-image
 sudo pip3 install Pandas
 sudo pip3 install NuPIC
 sudo pip3 install Nilearn

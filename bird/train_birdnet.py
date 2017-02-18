@@ -181,9 +181,10 @@ def main():
               validation_data=(X_test, Y_test))
 
     # evaluate
-    # accuracy = model.evaluate(X_test, Y_test)
-    # print('Model performance:', accuracy)
+    accuracy = model.evaluate(X_test, Y_test)
+    print('Model performance:', accuracy)
 
+    # save parameters
     print('saving parameters..')
     save_model_json(model,'bird')
     save_model_yaml(model,'bird')

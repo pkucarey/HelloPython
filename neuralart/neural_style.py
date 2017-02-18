@@ -77,7 +77,7 @@ def build_parser():
 
 def main():
     parser = build_parser()
-    options = parser.parse_args(' --content examples/1-content.jpg --styles examples/1-style.jpg examples/2-style1.jpg --output 1-result.jpg'.split())
+    options = parser.parse_args(' --content images/reference_image.jpg --styles images/base_image.jpg --output result.jpg'.split())
 
     if not os.path.isfile(options.network):
         parser.error("Network %s does not exist. (Did you forget to download it?)" % options.network)

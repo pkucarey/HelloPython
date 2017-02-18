@@ -7,5 +7,7 @@
 <path>/${PROJECT_DIR_NAME}/dogs_vs_cats</path>
 <path>/${PROJECT_DIR_NAME}/deep-learning-models-master</path>
 <path>/${PROJECT_DIR_NAME}/neuralart</path>
+<path>/${PROJECT_DIR_NAME}/tensorflow-resnet-master</path>
+<path>/${PROJECT_DIR_NAME}/ImageModels-master</path>
 </pydev_pathproperty>
 </pydev_project>

@@ -10,3 +10,13 @@ fcitx
 cd /var/lib/dpkg
 sudo mv info info.bak
 sudo mkdir info
+
+4.经常弹出"检测到系统程序出现问题"解决方法
+CTRL+ALT+T ，打开终端
+sudo vim /etc/default/apport
+把里面的enabled=1改成enabled=0，保存
+
+5.刻录
+sudo apt install k3b
+
+
