@@ -1,1 +1,1 @@
-pip3 list | awk -F ' ' '{print $1}' | xargs -l sudo pip3 install --upgrade  
+pip list | awk -F ' ' '{print $1}' | xargs -l sudo pip install --upgrade  

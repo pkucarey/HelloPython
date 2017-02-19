@@ -19,4 +19,8 @@ sudo vim /etc/default/apport
 5.刻录
 sudo apt install k3b
 
+6.查看端口占用情况
+netstat
 
+7.查看ip
+ifconfig

@@ -9,5 +9,9 @@
 <path>/${PROJECT_DIR_NAME}/neuralart</path>
 <path>/${PROJECT_DIR_NAME}/tensorflow-resnet-master</path>
 <path>/${PROJECT_DIR_NAME}/ImageModels-master</path>
+<path>/${PROJECT_DIR_NAME}/fast-style-transfer-master</path>
+<path>/${PROJECT_DIR_NAME}/floyd-cli-master</path>
+<path>/${PROJECT_DIR_NAME}/test</path>
+<path>/${PROJECT_DIR_NAME}/activity_analysis</path>
 </pydev_pathproperty>
 </pydev_project>
