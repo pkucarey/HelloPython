@@ -7,3 +7,6 @@ sudo docker images | grep " [months|days|weeks]* ago" | awk '{print $3}' | xargs
 3.kill one images
 sudo docker rmi -f 'name'
 
+4.delete all the containers
+sudo docker rm $(sudo docker stop $(sudo docker ps -aq))
+
