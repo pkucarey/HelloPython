@@ -4,14 +4,11 @@
 <pydev_property name="org.python.pydev.PYTHON_PROJECT_VERSION">python 3.6</pydev_property>
 <pydev_pathproperty name="org.python.pydev.PROJECT_SOURCE_PATH">
 <path>/${PROJECT_DIR_NAME}/bird</path>
-<path>/${PROJECT_DIR_NAME}/dogs_vs_cats</path>
 <path>/${PROJECT_DIR_NAME}/deep-learning-models-master</path>
 <path>/${PROJECT_DIR_NAME}/neuralart</path>
 <path>/${PROJECT_DIR_NAME}/tensorflow-resnet-master</path>
 <path>/${PROJECT_DIR_NAME}/ImageModels-master</path>
 <path>/${PROJECT_DIR_NAME}/fast-style-transfer-master</path>
-<path>/${PROJECT_DIR_NAME}/floyd-cli-master</path>
 <path>/${PROJECT_DIR_NAME}/test</path>
-<path>/${PROJECT_DIR_NAME}/activity_analysis</path>
 </pydev_pathproperty>
 </pydev_project>

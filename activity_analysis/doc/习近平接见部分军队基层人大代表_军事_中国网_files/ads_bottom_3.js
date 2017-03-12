@@ -1,3 +1,0 @@
-document.write('<script type="text/javascript">var cpro_psid = "1000302";var cpro_pswidth = 960;var cpro_psheight = 140;</script><script src="http://su.bdimg.com/static/dspui/js/ue.js" type="text/javascript"></script>');
-document.write('<div style="width:100%;height:10px;"></div>');
-document.write('<script type="text/javascript">QIHOO_UNION_SLOT={w:960, h:90, ls:"s382f8bf68a"};</script><script type="text/javascript" src="http://s.lianmeng.360.cn/so/inlay.js" charset="utf-8"></script>');

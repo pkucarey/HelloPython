@@ -1,4 +1,0 @@
-/**
- * URL处理容器 
- */
-KISSY.add("xh/common/1.0/url",function(a,b){var c={};return b.extend(c,{query:function(){for(var c,a=window.location.search,b=/(?:\?|&)(.*?)=(.*?)(?=&|$)/g,d={};null!=(c=b.exec(a));)d[c[1]]=decodeURIComponent(c[2]);return d},jsonp:function(b,c,d,e){var h,f=a.IO,g=null;if(c instanceof Array)for(g=[],h=0;h<c.length;h++)g.push(document.getElementById(c[h]));else g="string"==typeof c?document.getElementById(c):c;f({dataType:"jsonp",url:encodeURI(b),type:"get",success:function(a){d(g,a)},error:function(){"function"==typeof e&&e(g)}})},json:function(b,c,d){var e=a.IO;e({dataType:"json",url:encodeURI(b),type:"get",success:function(a){c(a)},error:function(){"function"==typeof d&&d(obj)}})}}),c},{requires:["../1.0/lang"]});

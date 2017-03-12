@@ -1,5 +1,0 @@
-___adblockplus({"queryid" : "028cdd496d8471ad","tuid" : "u1415887_0","placement" : {"basic" : {"cname":"99080009_cpr","conBackEnv":1,"flowType":1,"mediumType":1,"rspFormat":1,"sellType":2,"sspId":1,"tuId":9223372032561224399,"userId":6761840}
-,"container" : {"anchoredType":3,"closeType":1,"floated":{"blockType":3,"clientw":0,"contw":960,"dockType":1,"follow":1},"height":250,"location":10,"sizeType":1,"slide":{},"width":300}
-,"fillstyle" : {"cloudTheme":{},"elements":[1,2],"layout":[1],"lu":{},"search":{},"styleType":2,"txt":{"number":1},"video":{}}
-,"userdefine" : "|cpro_template=template_float_all_normal","complement_type" : 2,"update" : "1445316457_1486514131"},"extends" : {"ssph":250,"sspw":300}
-,"pdb_deliv" : {"deliv_id" : "0","deliv_des" : {},"brandad" : 0},"order_deliv" : {"deliv_id" : "0","demand_id" : "0"},"rtb_deliv" : {"deliv_id" : "0","demand_id" : "1415887"},"media_protect" : ""});
